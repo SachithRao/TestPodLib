@@ -10,24 +10,23 @@ import XCTest
 
 class TestPodLibTests: XCTestCase {
 
+    var testPodLib: TestPodLib!
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        testPodLib = TestPodLib()
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        testPodLib = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testAdd() {
+        XCTAssertEqual(testPodLib.add(a: 2, b: 3), 5)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testSub() {
+        XCTAssertEqual(testPodLib.sub(a: 3, b: 2), 1)
     }
-
 }

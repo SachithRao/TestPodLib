@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7655F3242570CBC20092BD26 /* TestPodLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7655F3232570CBC20092BD26 /* TestPodLib.swift */; };
 		76C28D002570037600A763FD /* TestPodLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C28CF62570037600A763FD /* TestPodLib.framework */; };
 		76C28D052570037600A763FD /* TestPodLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C28D042570037600A763FD /* TestPodLibTests.swift */; };
 		76C28D072570037600A763FD /* TestPodLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C28CF92570037600A763FD /* TestPodLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7655F3232570CBC20092BD26 /* TestPodLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPodLib.swift; sourceTree = "<group>"; };
 		76C28CF62570037600A763FD /* TestPodLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestPodLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C28CF92570037600A763FD /* TestPodLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPodLib.h; sourceTree = "<group>"; };
 		76C28CFA2570037600A763FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		76C28CF82570037600A763FD /* TestPodLib */ = {
 			isa = PBXGroup;
 			children = (
+				7655F3232570CBC20092BD26 /* TestPodLib.swift */,
 				76C28CF92570037600A763FD /* TestPodLib.h */,
 				76C28CFA2570037600A763FD /* Info.plist */,
 			);
@@ -209,6 +212,7 @@
 				TargetAttributes = {
 					76C28CF52570037600A763FD = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 					76C28CFE2570037600A763FD = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -270,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7655F3242570CBC20092BD26 /* TestPodLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		76C28D0B2570037600A763FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.teksystems.TestPodLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		76C28D0C2570037600A763FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -484,6 +492,7 @@
 		76C28D0E2570037600A763FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestPodLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,6 +510,7 @@
 		76C28D0F2570037600A763FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestPodLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
